@@ -1,0 +1,24 @@
+/* h1 {
+   color: red;
+   background: cyan;
+   border: 2px solid blue;
+   font-size: 48px;
+} */
+
+body {
+  background-color: silver;
+  font-family: "Helvetica", sans-serif;
+  color: darkblue;
+}
+
+p {
+  line-height: 0.8;
+}
+
+.tab {
+  margin-left: 10px;
+}
+
+.tab2 {
+  margin-left: 20px;
+}
