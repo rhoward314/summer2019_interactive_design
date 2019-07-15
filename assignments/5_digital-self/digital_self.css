@@ -53,8 +53,14 @@ body {
   padding: .5em .5em .25em .5em;
   margin: .25em;
   border: 1px solid black;
+  border-radius: 5%;
   text-align: center;
   cursor: pointer;
+}
+
+.column:hover {
+  background: dodgerblue;
+  border: 1px solid dodgerblue;
 }
 
 .grid {
@@ -64,6 +70,7 @@ body {
 .timeline {
   max-width: 100%;
   height: auto;
+  border-radius: 5%;
 }
 
 @media screen and (max-width: 768px) {
