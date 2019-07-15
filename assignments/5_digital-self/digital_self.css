@@ -87,4 +87,8 @@ body {
   .grid {
     width: 36%;
   }
+
+  .column {
+    padding: 1.6% 1.6% 0.8% 1.6%;
+  }
 }
