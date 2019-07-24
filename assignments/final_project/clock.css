@@ -1,0 +1,35 @@
+body {
+  height: 97.5vh;
+}
+
+#clock {
+  display: flex;
+  display: inline;
+  position: relative;
+}
+
+@font-face {
+  font-family: "digital";
+  src: url("digital-7/digital-7.ttf");
+}
+
+@font-face {
+  font-family: "digital_mono";
+  src: url("digital-7/digital-7 (mono).ttf");
+}
+
+#hours, #minutes, #seconds {
+  font-family: "digital_mono";
+}
+
+#colon {
+  font-family: "digital";
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
