@@ -1,5 +1,9 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  height: 97.5vh;
+  /* height: 97.5vh; */
 }
 
 @font-face {
@@ -14,6 +18,11 @@ body {
   font-family: "computer_modern";
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+#path {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
