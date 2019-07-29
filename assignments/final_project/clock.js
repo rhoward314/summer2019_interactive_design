@@ -21,10 +21,7 @@ function findTime() {
     ss = '0' + ss;
   }
 
-  hours.innerHTML = `${hh}`;
-  minutes.innerHTML = `${mm}`;
-  seconds.innerHTML = `${ss}`;
-  // clock.innerHTML = `${hh}:${mm}:${ss}`;
+  clock.innerHTML = `${hh}:${mm}:${ss}`;
   clock.style.left = `${1.33 * sms}vw`;
   clock.style.top = `${1.46 * sms}vh`;
   clock.style.fontSize = `${sms + 10}px`;
