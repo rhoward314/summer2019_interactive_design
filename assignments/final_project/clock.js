@@ -2,13 +2,14 @@ let clock = document.getElementById("clock");
 let body = document.querySelector("body");
 
 let path = anime.path('path');
-anime({
+let animation = anime({
   targets: '#clock',
   translateX: path('x'),
   translateY: path('y'),
   easing: 'linear',
   duration: 60 * 1000,
-  loop: true
+  loop: true,
+  autoplay: false
 });
 
 function findTime() {
@@ -28,17 +29,14 @@ function findTime() {
     ss = '0' + ss;
   }
 
-  // let colorTime = 4*sms;
   let colorTime = 10*(hh+m/60);
 
   clock.innerHTML = `${hh}:${mm}:${ss}`;
-  // clock.style.left = `${sms}vw`;
-  // clock.style.top = `${sms}vh`;
   clock.style.fontSize = `${-24 * Math.cos(Math.PI * (m + (s / 60)) / 30) + 48}px`;
   clock.style.color = `rgb(${colorTime},${colorTime},${colorTime})`;
   body.style.background = `rgb(${255-colorTime},${255-colorTime},${255-colorTime})`;
 
-  path.seek(path.duration * (s / 60));
+  animation.seek(animation.duration * (sms / 60));
 }
 
 setInterval(function() {

@@ -3,6 +3,9 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -17,44 +20,26 @@ body {
   position: relative;
   font-family: "computer_modern";
   position: absolute;
-  top: -40px;
-  left: 295px;
+  top: -2vh;
+  left: 25vw;
 }
-
-/* #path {
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
 
 #path {
   display: flex;
-  position: fixed;
-  top: 0;
-  left:0;
-  right:0;
-  bottom:0;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  height: 95vh;
+  margin-top: 2.5vh;
 }
 
 #path svg {
-  max-width: 100vw;
-  height: 100vh;
+  max-width: 95vw;
+  height: 95vh;
 }
 
 svg {
   display: block;
-  /* width: 100%; */
   height: 100%;
   display: flex;
   justify-content: center;
