@@ -8,15 +8,16 @@ body {
 
 .cover {
   display: flex;
+  width: 60%;
   justify-content: center;
   z-index: 1;
 }
 
-#cover_img {
+/* #cover_img {
   width: 60%;
-}
+} */
 
-/* .profile {
+.profile {
   display: inline;
   position: absolute;
   right: 66%;
@@ -35,7 +36,7 @@ body {
   z-index: 2;
   font-family: "Helvetica", sans-serif;
   font-size: 14px;
-} */
+}
 
 .container {
   display: flex;
@@ -50,6 +51,7 @@ body {
 
 .column {
   background: whitesmoke;
+  width: 18%;
   padding: .5em .5em .25em .5em;
   margin: .25em;
   border: 1px solid black;
@@ -63,10 +65,6 @@ body {
   border: 1px solid dodgerblue;
 }
 
-.grid {
-  width: 18%;
-}
-
 .timeline {
   max-width: 100%;
   height: auto;
@@ -74,21 +72,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .grid {
+  .column {
     width: 24%;
   }
 
-  #cover_img {
-    width: 80%;
+  .profile {
+    border: 0.2em solid white;
   }
+
+  /* #cover_img {
+    width: 80%;
+  } */
 }
 
 @media screen and (max-width: 480px) {
-  .grid {
-    width: 36%;
-  }
-
   .column {
-    padding: 1.6% 1.6% 0.8% 1.6%;
+    width: 36%;
+    padding: 1.6% 1.6% 0.4% 1.6%;
   }
 }
