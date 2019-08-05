@@ -1,12 +1,21 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "computer_modern";
+  src: url("assignments/final_project/computer-modern/cmunrm.ttf");
+}
+
 body {
   background-color: silver;
-  font-family: "Helvetica", sans-serif;
+  font-family: "computer_modern", "Helvetica", sans-serif;
   color: darkblue;
 }
 
 p {
   line-height: 0.8;
-  font-size: 18px;
+  font-size: 22px;
   margin-left: 20px;
 }
 
@@ -26,10 +35,6 @@ h2 {
   color: black;
 }
 
-.lights_out *:hover {
+.lights_out *:not(button):hover {
   color: white;
-}
-
-button:hover {
-  color: black;
 }
