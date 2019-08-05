@@ -21,7 +21,7 @@
 
     @font-face {
       font-family: "computer_modern";
-      src: url("computer-modern/cmunrm.ttf")
+      src: url("computer-modern/cmunrm.ttf");
     }
 
     div {
@@ -31,18 +31,47 @@
     }
     </style>
 
-    <div><a href="https://www.jacopocolo.com/hexclock/" target="_blank">Hex clock</a></div>
+    <div style="margin-bottom:2vh">
+      <p><h1>About "Time in Motion"</h1></p>
+    </div>
+
+    <div>
+      <a href="https://www.jacopocolo.com/hexclock/" target="_blank">Hex clock</a>
+    </div>
 
     <div>
       <a href="https://www.youtube.com/user/shiffman/search?query=fourier" target="_blank">Inspiration to use an SVG image</a>
     </div>
 
+    <div style="margin-bottom:-2vh">
+      <p style="width:50vw">My first design idea, in which the minutes and seconds control the horizontal and vertican position, respectively, of the clock, and the hours control the font size, which cycles over a twelve-hour period:</p>
+    </div>
     <div>
-      <img src="sketch.jpg" height="400vh" alt="My first design idea"/>
+      <img src="design_ideas/sketch.jpg" height="400vh" alt="My first design idea"/>
+    </div>
+
+    <div style="margin-bottom:-2vh">
+      <p style="width:50vw">This pair of images shows the same time but with the clock in slightly different positions, illustrating the change from discontinuous motion, where the position of the clock would update every second, to pseudo-continuous motion, where the position of the clock updates every 20 milliseconds and seems perfectly smooth.
+      </p>
+    </div>
+    <div style="margin-bottom:2vh">
+      <img src="design_ideas/version_1_a.png" height="300vh" alt="A screenshot of a preliminary version of the clock"/>
+    </div>
+    <div>
+      <img src="design_ideas/version_1_b.png" height="300vh" alt="Another screenshot of the same version, with the clock showing the same time but in a slightly different location"/>
+    </div>
+
+    <div style="margin-bottom:-2vh">
+      <p>The path traced out by the clock in the current version:</p>
+    </div>
+    <div>
+      <video controls height="400vh">
+        <source src="design_ideas/clock_path.mp4" type="video/mp4">
+      </video>
     </div>
 
     <div>
-      <span>Many thanks to Matt Wolff, for fielding my many questions and spending hours staring at SVG images with me.</span>
+      <span>Special thanks to Matt Wolff, for fielding my many questions and spending hours staring at SVG images with me.</span>
     </div>
 
   </body>
